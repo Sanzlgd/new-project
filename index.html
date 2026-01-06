@@ -1,49 +1,67 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lumina - Premium Product Experience</title>
-    <!-- Preload nice fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <canvas id="webgl"></canvas>
-    
-    <div class="content">
-      <section class="section">
-        <div class="text-wrapper">
-            <h1>LUMINA X1</h1>
-            <p>The Future of Interactive Sound.</p>
-        </div>
-      </section>
-      
-      <section class="section right">
-        <div class="text-wrapper">
-            <h2>Precision Engineered</h2>
-            <p>Crafted with aerospace-grade titanium for lighter, stronger acoustics. The geometric precision ensures zero distortion at any volume.</p>
-        </div>
-      </section>
-      
-      <section class="section left">
-        <div class="text-wrapper">
-            <h2>Immersive Depth</h2>
-            <p>Experience sound like never before with our patented 3D spatial audio engine. It's not just music; it's a presence.</p>
-        </div>
-      </section>
-      
-      <section class="section center">
-        <div class="text-wrapper">
-            <h2>Experience Lumina</h2>
-            <p>Ready to upgrade your reality?</p>
-            <button class="btn">Pre-order Now</button>
-        </div>
-      </section>
-    </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="LUMINA X1 - The Future of Interactive Sound. Premium 3D interactive product experience." />
+  <title>Lumina - Premium Product Experience</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Three.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.min.js"></script>
+
+  <!-- GSAP from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+  <canvas id="webgl"></canvas>
+
+  <div class="content">
+    <section class="section">
+      <div class="text-wrapper">
+        <h1>LUMINA X1</h1>
+        <p>The Future of Interactive Sound.</p>
+      </div>
+    </section>
+
+    <section class="section right">
+      <div class="text-wrapper">
+        <h2>Precision Engineered</h2>
+        <p>Crafted with aerospace-grade titanium for lighter, stronger acoustics. The geometric precision ensures zero
+          distortion at any volume.</p>
+      </div>
+    </section>
+
+    <section class="section left">
+      <div class="text-wrapper">
+        <h2>Immersive Depth</h2>
+        <p>Experience sound like never before with our patented 3D spatial audio engine. It's not just music; it's a
+          presence.</p>
+      </div>
+    </section>
+
+    <section class="section center">
+      <div class="text-wrapper">
+        <h2>Experience Lumina</h2>
+        <p>Ready to upgrade your reality?</p>
+        <button class="btn">Pre-order Now</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="main.js"></script>
+</body>
+
 </html>
