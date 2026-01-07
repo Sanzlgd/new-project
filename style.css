@@ -1,7 +1,8 @@
 :root {
     font-family: 'Inter', system-ui, sans-serif;
     color: #ffffff;
-    background-color: #050505;
+    background-color: #050515;
+    /* Sligthly bluer for version check */
 }
 
 body {

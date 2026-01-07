@@ -47,13 +47,12 @@ try {
 
     // 1. Core Sphere (The "Brain")
     const coreGeo = new THREE.SphereGeometry(0.8, 64, 64);
-    const coreMat = new THREE.MeshPhysicalMaterial({
-        color: 0x444444,        // Visible gray
-        roughness: 0.4,         // Less glossy, catches more light
-        metalness: 0.3,         // Low metalness to avoid "black mirror" effect
-        clearcoat: 1.0,
-        clearcoatRoughness: 0.1,
-        emissive: 0x220044,     // Subtle glow
+    // Switched to Standard Material for maximum compatibility
+    const coreMat = new THREE.MeshStandardMaterial({
+        color: 0x444444,
+        roughness: 0.4,
+        metalness: 0.3,
+        emissive: 0x220044,
         emissiveIntensity: 0.5
     });
     const core = new THREE.Mesh(coreGeo, coreMat);

@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 
   <!-- Three.js from cdnjs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
@@ -62,7 +62,25 @@
   </div>
 
   <!-- Main JavaScript -->
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
+
+  <div id="debug-spinner"
+    style="position: fixed; bottom: 20px; left: 20px; width: 20px; height: 20px; background: #00ff00; transform: rotate(0deg); z-index: 9999; pointer-events: none;">
+  </div>
+
+  <script>
+    // Animate spinner to prove JS loop is running
+    const spinner = document.getElementById('debug-spinner');
+    let angle = 0;
+    function spin() {
+      if (spinner) {
+        angle += 5;
+        spinner.style.transform = 'rotate(' + angle + 'deg)';
+      }
+      requestAnimationFrame(spin);
+    }
+    spin();
+  </script>
 </body>
 
 </html>
