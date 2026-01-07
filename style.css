@@ -41,6 +41,15 @@ canvas#webgl {
     transform: translateY(0);
 }
 
+.section.hero {
+    justify-content: flex-start;
+    /* Move to Top */
+    align-items: flex-start;
+    /* Move to Left */
+    padding-top: 15vh;
+    /* Space from top edge */
+}
+
 .text-wrapper {
     pointer-events: auto;
     background: rgba(0, 0, 0, 0.3);
