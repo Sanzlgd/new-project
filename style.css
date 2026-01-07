@@ -131,3 +131,75 @@ canvas#webgl {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+/* Hint Text */
+.hint {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.7;
+    animation: pulse 3s infinite;
+    pointer-events: none;
+    letter-spacing: 1px;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* Stagger delay for subtitle */
+.fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}

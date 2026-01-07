@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 
   <!-- Three.js from cdnjs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous"></script>
@@ -31,9 +31,10 @@
   <div class="content">
     <section class="section">
       <div class="text-wrapper">
-        <h1>LUMINA X1</h1>
-        <p>The Future of Interactive Sound.</p>
+        <h1 class="fade-in">LUMINA X1</h1>
+        <p class="fade-in-delay">The Future of Interactive Sound.</p>
       </div>
+      <p class="hint">Move mouse to explore · Scroll to discover</p>
     </section>
 
     <section class="section right">
@@ -61,26 +62,13 @@
     </section>
   </div>
 
+  <footer>
+    Built by Santhosh ·
+    <a href="https://github.com/Sanzlgd/new-project" target="_blank">GitHub</a>
+  </footer>
+
   <!-- Main JavaScript -->
-  <script src="main.js?v=2"></script>
-
-  <div id="debug-spinner"
-    style="position: fixed; bottom: 20px; left: 20px; width: 20px; height: 20px; background: #00ff00; transform: rotate(0deg); z-index: 9999; pointer-events: none;">
-  </div>
-
-  <script>
-    // Animate spinner to prove JS loop is running
-    const spinner = document.getElementById('debug-spinner');
-    let angle = 0;
-    function spin() {
-      if (spinner) {
-        angle += 5;
-        spinner.style.transform = 'rotate(' + angle + 'deg)';
-      }
-      requestAnimationFrame(spin);
-    }
-    spin();
-  </script>
+  <script src="main.js?v=3"></script>
 </body>
 
 </html>
